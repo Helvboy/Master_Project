@@ -18,7 +18,7 @@ path_general = os.path.abspath(os.path.join(path_code, os.pardir))
 Path_data = os.path.join(path_general, "data")
 Path_save = os.path.join(Path_data, "Live_eval")
 
-start = datetime.now() # mettre plus bas ?                  -----------
+start = datetime.now()
 
 reader = init_reader()
 
@@ -152,10 +152,10 @@ def EPCs_displayer():
                 data = save_Data(epcs_1, epcs_2)
                 print("saving\n")
 
-        displyer(S_g, epcs_1, epcs_2)
+        displayer(S_g, epcs_1, epcs_2)
 
 
-def displyer(S_g, epcs_1, epcs_2):
+def displayer(S_g, epcs_1, epcs_2):
     global t_refresh
 
     if S_g.page == "Menu":
